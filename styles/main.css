@@ -1,0 +1,147 @@
+
+/* banner */
+
+header{
+    padding: 20px;
+    width: 100%;
+    background: rgb(227,229,232);
+    border-bottom: 1px dotted white;
+    border-top: 1px dotted white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* navigation */
+
+nav { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+ul {
+    overflow: auto;
+    list-style-type: none;
+    color: black;
+}
+li {
+    padding: 0 20px;
+    height: 40px;
+    margin-right: 12px;
+    border-right: 3px solid black;
+    color:black;
+}
+li a {
+    font-family:'Open Sans', sans-serif;
+    color: black; 
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+li a:hover {
+    color:rgb(140, 25, 25);
+}
+li:last-child {
+    color: black;
+}
+
+/* main */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(227,229,232);
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+}
+h2 {
+    font-size: 28px;
+    text-align: center;
+} 
+h3 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 1em;
+}
+h4{
+    font-size:22px;
+    text-align: justify;
+    font-weight: lighter;
+    margin: 1em;
+}
+p{
+    color: rgb(40, 39, 39);
+    font-size: 20px;
+    text-align: justify;
+    margin: 1em;
+    padding: 0;
+}
+
+/* footer */
+
+footer{
+    clear: both;
+    position: center;
+    justify-self: center;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(227,229,232);  
+}
+/* column */
+
+.col{
+    column-count: 2;
+    column-gap: 4em;
+    margin: 1em;
+    font-size: 14px;
+}
+
+/* images */
+
+img{
+    align-items: center;
+    margin: 2em;
+}
+
+/* 600px and less */
+
+@media all and (max-width: 600px) {
+    body {font-size: 115%;}
+    header {margin: 0 0.5% 2% 0.5%;}
+    footer {margin: 2% 0.5% 1%  0.5%;}
+    article .col{
+        column-count: 1;
+        column-gap: 4em; 
+    }
+}
+
+/* 600px and greater */
+
+@media all and (min-width:600px){
+    body {font-size: 125%;}
+    header {margin: 0 0.66% 2% 0.66%;}
+    footer {margin: 0 0.66% 2% 0.66%;}
+    article .col{
+        column-count: 2;
+        column-gap: 4em;
+    }
+}
+
+/* 750px and greater */
+
+@media all and (min-width:750px){
+    li {
+        float: left;
+    }
+}
+
+/* 750px and less */
+
+@media all and (max-width:750px){
+    nav{
+        align-items: flex-start;
+    }
+}
